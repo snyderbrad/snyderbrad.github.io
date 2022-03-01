@@ -1,26 +1,76 @@
 <input type="radio" name="section" id="radio-section-0" checked />
 <input type="radio" name="section" id="radio-section-1" />
 <input type="radio" name="section" id="radio-section-2" />
+<input type="radio" name="section" id="radio-section-3" />
+<input type="radio" name="section" id="radio-section-4" />
 
 <section id="section-0" class="section">
   <h2><label for="radio-section-0">Bradley Snyder</label></h2>
   <div>
-    Software Developer experienced with engineering modern large scale technology stacks.
+    Software Developer with experience engineering full stack applications for large clients using
+    modern technology stacks and methods.
   </div>
+  <div><a href="mailto:bradleysnyder358@gmail.com">bradleysnyder358@gmail.com</a></div>
+  <div><a href="tel:+13307306771"><span itemprop="telephone">(330) 730-6771</span></a></div>
+  <div><a href="https://snyderbrad.github.io"><span>snyderbrad.github.io</span></a></div>
 </section>
 <section id="section-1" class="section">
   <h2><label for="radio-section-1">Previous Experience</label></h2>
+  <div>Open Practice</div>
+  <div>Software Developer</div>
+  <div>2019 - present</div>
   <div>
     <ul>
-        <p>Open Practice</p>
-        <p>Software Developer</p>
+      <li>Developed large features for major releases.
+      </li>
+      <li>Created RESTful API Microservices using Spring and used them into a legacy application.
+      </li>
+      <li>Integrated new technologies into the development workflow such as SLF4J logging framework,
+        Graphite and Grafana, FlyWay, and more.
+      </li>
     </ul>
   </div>
 </section>
 <section id="section-2" class="section">
   <h2><label for="radio-section-2">Side Projects</label></h2>
   <div>
-    <a href="https://kayakron.com"> Kayakron.com</a>
+    <a href="https://kayakron.com">kayakron.com</a>
+    <div>A single page application made using state of the art framework SvelteKit with SSR to gain experience with
+      TypeScript. </div>
+  </div>
+</section>
+<section id="section-3" class="section">
+  <h2><label for="radio-section-3">Education</label></h2>
+  <div><b>The University of Akron</b></div>
+  <div><li>B.S. Computer Science</li></div>
+  <div>
+  </div>
+</section>
+<section id="section-4" class="section">
+  <h2><label for="radio-section-4">Programming Languages</label></h2>
+  <div>
+    <ul>
+      <li>Java
+      </li>
+      <li>JavaScript
+      </li>
+      <li>TypeScript
+      </li>
+      <li>HTML
+      </li>
+      <li>CSS
+      </li>
+      <li>C++
+      </li>
+      <li>Python
+      </li>
+      <li>C#
+      </li>
+      <li>VB.net
+      </li>
+      <li>SQL
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -33,6 +83,10 @@
     display: none;
   }
 
+  section>div>a {
+    font-style: italic;
+  }
+
   #radio-section-0:checked~#section-0>div {
     display: block;
   }
@@ -42,6 +96,14 @@
   }
 
   #radio-section-2:checked~#section-2>div {
+    display: block;
+  }
+
+  #radio-section-3:checked~#section-3>div {
+    display: block;
+  }
+
+  #radio-section-4:checked~#section-4>div {
     display: block;
   }
 
@@ -62,6 +124,12 @@
 
     section>div {
       display: block;
+    }
+
+    p {
+      font-family: Quicksand, Arial, Verdana, sans-serif;
+      padding: 0px;
+      margin: 0px;
     }
   }
 </style>
