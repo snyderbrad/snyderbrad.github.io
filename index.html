@@ -98,17 +98,17 @@
   }
 
   section>div {
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-name: slidein;
     display: none;
     font-size: 1.2em;
   }
 
   section>ul {
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-name: slidein;
     display: none;
-    padding-left: 30px;
+    /* margin-left: 15% ; */
     padding-top: 0px;
     margin-top: 0px;
   }
@@ -117,8 +117,6 @@
     display: inline-block;
     padding-top: 0px;
     margin-top: 0px;
-    padding-left: 10px;
-    margin-left: 10px;
   }
 
   section>div>a {
@@ -158,6 +156,26 @@
     display: block;
   }
 
+  #radio-section-0:checked~#section-0 {
+    margin-left: 7.5%;
+  }
+
+  #radio-section-1:checked~#section-1 {
+    margin-left: 7.5%;
+  }
+
+  #radio-section-2:checked~#section-2 {
+    margin-left: 7.5%;
+  }
+
+  #radio-section-3:checked~#section-3 {
+    margin-left: 7.5%;
+  }
+
+  #radio-section-4:checked~#section-4 {
+    margin-left: 7.5%;
+  }
+
   #radio-section-1:checked~#section-0>h2>label>i {
     visibility: visible;
   }
@@ -183,8 +201,7 @@
   }
 
   .section {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
     overflow: visible;
   }
 
@@ -196,7 +213,7 @@
   section {
     background-image: linear-gradient(to right, white, #75939c);
     border-radius: 40px;
-    width: 75%;
+    width: 95%;
     padding-top: 3px;
     padding-bottom: 3px;
   }
@@ -244,16 +261,21 @@
     from {
       margin-left: 100%;
       width: 300%;
+      opacity: 0%;
     }
 
-    /* 50% {
-    margin-left: 25%;
-    width: 150%;
-  } */
+    50% {
+      opacity: 30%;
+    }
+
+    75% {
+      opacity: 75%;
+    }
 
     to {
       margin-left: 0%;
       width: 100%;
+      opacity: 100%;
     }
   }
 </style>
