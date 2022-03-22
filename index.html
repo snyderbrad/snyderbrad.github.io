@@ -72,6 +72,11 @@
       </li>
       <li>CSS
       </li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      </li>
       <li>C++
       </li>
       <li>Python
@@ -89,16 +94,22 @@
   input {
     display: none;
   }
-  
+
   section>div {
     animation-duration: 1s;
-  animation-name: slidein;
+    animation-name: slidein;
     display: none;
   }
 
+  
+  section>div>ul {
+      width: 50%;
+      display: inline-block;
+    }
+
   section>div>a {
     font-style: italic;
-    padding-left: 10px;
+    padding: 10px;
   }
 
   section>div {
@@ -132,17 +143,37 @@
     display: block;
   }
 
+  #radio-section-0:hover~#section-0>div {
+    display: block;
+  }
+
+  #radio-section-1:hover~#section-1>div {
+    display: block;
+  }
+
+  #radio-section-2:hover~#section-2>div {
+    display: block;
+  }
+
+  #radio-section-3:hover~#section-3>div {
+    display: block;
+  }
+
+  #radio-section-4:hover~#section-4>div {
+    display: block;
+  }
+
   .section {
     margin-left: 30%;
     margin-right: 20%;
     overflow: hidden;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   html {
     background-color: #75939c;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   section {
@@ -155,36 +186,62 @@
     @page {
       size: letter;
     }
-
-    .section {
-      margin-left: 5%;
-      margin-right: 25%;
-    }
-
-    section>div {
-      display: block;
-    }
-
-    p {
-      font-family: Arial, Verdana, sans-serif;
-      padding: 0px;
-      margin: 0px;
-    }
+    input {
+    display: none;
   }
+
+  section>div {
+    display: block;
+  }
+
+  section>div>a {
+    font-style: italic;
+  }
+
+  #radio-section-0:checked~#section-0>div {
+    display: block;
+  }
+
+  #radio-section-1:checked~#section-1>div {
+    display: block;
+  }
+
+  #radio-section-2:checked~#section-2>div {
+    display: block;
+  }
+
+  #radio-section-3:checked~#section-3>div {
+    display: block;
+  }
+
+  #radio-section-4:checked~#section-4>div {
+    display: block;
+  }
+
+  .section {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  html {
+    font-size: 16px;
+  }
+  }
+
   @keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
 
-  /* 50% {
+    /* 50% {
     margin-left: 25%;
     width: 150%;
   } */
 
-  to {
-    margin-left: 0%;
-    width: 100%;
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
-}
 </style>
