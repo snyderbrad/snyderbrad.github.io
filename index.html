@@ -9,7 +9,7 @@
   href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,900&display=swap"
   rel="stylesheet"
 />
-<input type="radio" name="section" id="radio-section-0" checked />
+<input type="radio" name="section" id="radio-section-0" />
 <input type="radio" name="section" id="radio-section-1" />
 <input type="radio" name="section" id="radio-section-2" />
 <input type="radio" name="section" id="radio-section-3" />
@@ -19,8 +19,8 @@
   <div>
     <h2 class="header">
       <label for="radio-section-0"
-        >Bradley Snyder&nbsp<i
-          style="visibility: hidden"
+        >Bradley Snyder&nbsp
+        <i
           class="fa fa-thumb-tack"
         ></i
       ></label>
@@ -38,7 +38,6 @@
         ><span>snyderbrad.github.io</span></a
       >
     </div>
-    </br>
   </div>
   <div
     style="width: 85%; padding-left: 15px; margin-left: 5px"
@@ -173,6 +172,8 @@
 
   section > div {
     padding-left: 15px;
+    margin-right: 20px;
+    padding-bottom: 10px;
   }
 
   section > h2 > label {
@@ -263,14 +264,11 @@
     display: block;
   }
 
-  #section-2 {
-    display: none;
-  }
-
   .section {
     margin-left: 5%;
     overflow: visible;
-    width: 50%;
+    max-width: 95%;
+    min-width: 75%;
   }
 
   html {
